@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="messenger.ChatInterfaceController">
+   <children>
+      <Label fx:id="name" alignment="CENTER" prefHeight="17.0" prefWidth="403.0" text="Messages" textFill="#d01b1b" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="messages" editable="false" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: yellow; -fx-border-color: silver;" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="OpenSansEmoji" size="18.0" />
+         </font>
+      </TextArea>
+      <FlowPane prefHeight="38.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+         <children>
+            <Button fx:id="demoji" mnemonicParsing="false" onAction="#demoji" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="7.0" y="5.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Downloads/Presentation%20photoes/demoji.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#baka" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="6.0" y="5.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/baka.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#happy" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="5.0" y="4.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/happy.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#tongue" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="5.0" y="4.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/tongue.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="124.0" layoutY="10.0" mnemonicParsing="false" onAction="#wink" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="5.0" y="4.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/wink.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="162.0" layoutY="10.0" mnemonicParsing="false" onAction="#sad" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="4.0" y="4.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/sad.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="200.0" layoutY="10.0" mnemonicParsing="false" onAction="#kiss" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="4.0" y="2.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/kiss.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="238.0" layoutY="10.0" mnemonicParsing="false" onAction="#angry" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="5.0" y="4.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/angry.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="276.0" layoutY="10.0" mnemonicParsing="false" onAction="#wow" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="5.0" y="3.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/wow.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="314.0" layoutY="10.0" mnemonicParsing="false" onAction="#cry" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="4.0" y="3.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/cry.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button layoutX="352.0" layoutY="10.0" mnemonicParsing="false" onAction="#annoyed" prefHeight="38.0" prefWidth="38.0">
+               <effect>
+                  <ImageInput x="4.0" y="3.0">
+                     <source>
+                        <Image url="file:/C:/Users/Alavi/Documents/Messenger/src/messenger/annoyed.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+         </children>
+      </FlowPane>
+      <TextField fx:id="send" alignment="TOP_LEFT" onKeyPressed="#sendmessageenter" prefHeight="124.0" prefWidth="400.0" promptText="Type your message here" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn1" mnemonicParsing="false" onAction="#sendmessage" prefHeight="30.0" prefWidth="421.0" text="SEND" textFill="#12cbf5" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f5f5f5" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</VBox>
